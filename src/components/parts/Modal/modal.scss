@@ -1,0 +1,135 @@
+.modal {
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  z-index: 999999999999999;
+
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    top: 20%;
+    border-radius: 20px;
+    width: 50%;
+    height: auto;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    box-shadow: 1px 1px 5px 1px #444343;
+    background: rgb(56, 52, 52);
+    z-index: 999999999999999;
+
+    .modal-header {
+      padding-left: 50px;
+      padding-right: 30px;
+      color: white;
+      height: 23%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(56, 52, 52);
+      border-radius: 20px 20px 0px 0px;
+
+      .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        transition: 0.3s;
+        font-weight: bold;
+      }
+      .close:hover,
+      .close:focus {
+        transition: 0.3s;
+        transform: scale(1.5);
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+
+    .modal-body {
+      padding: 2px 16px;
+      height: auto;
+      background: rgb(56, 52, 52);
+      border-radius: 20px;
+    }
+
+    .modal-footer {
+      padding: 2px 16px;
+      color: white;
+      height: 27%;
+      background: rgb(56, 52, 52);
+      border-radius: 0px 0px 20px 20px;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      .submit-button {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 20%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 20%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideOut {
+  from {
+    top: 20%;
+    opacity: 1;
+  }
+  to {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    top: 20%;
+    opacity: 1;
+  }
+  to {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

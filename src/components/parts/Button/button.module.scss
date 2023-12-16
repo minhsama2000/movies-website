@@ -1,0 +1,128 @@
+$linear-gradient-primary: linear-gradient(90deg, #00bdff, #0079ff);
+$linear-gradient-danger: linear-gradient(90deg, #ec7434, #d579dd);
+$linear-gradient-warning: linear-gradient(90deg, #f0cb52, #d579dd);
+
+.button {
+  border: none;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  height: 3em;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.button-primary {
+  background: $linear-gradient-primary;
+  animation: button-primary 1s linear none;
+}
+
+.button-primary:hover {
+  animation: button-primary 1s linear infinite;
+  opacity: 1;
+}
+
+.button-danger {
+  background: $linear-gradient-danger;
+  animation: button-danger 1s linear none;
+}
+
+.button-danger:hover {
+  animation: button-danger 1s linear infinite;
+  opacity: 1;
+}
+
+.button-warning {
+  background: $linear-gradient-warning;
+  animation: button-warning 1s linear none;
+}
+
+.button-warning:hover {
+  animation: button-warning 1s linear infinite;
+  opacity: 1;
+}
+
+@keyframes button-primary {
+  0% {
+    background: linear-gradient(0deg, #00bdff, #0079ff);
+  }
+  12% {
+    background: linear-gradient(45deg, #00bdff, #0079ff);
+  }
+  24% {
+    background: linear-gradient(95deg, #00bdff, #0079ff);
+  }
+  36% {
+    background: linear-gradient(145deg, #00bdff, #0079ff);
+  }
+  48% {
+    background: linear-gradient(195deg, #00bdff, #0079ff);
+  }
+  60% {
+    background: linear-gradient(245deg, #00bdff, #0079ff);
+  }
+  72% {
+    background: linear-gradient(295deg, #00bdff, #0079ff);
+  }
+  100% {
+    background: linear-gradient(360deg, #00bdff, #0079ff);
+  }
+}
+
+@keyframes button-danger {
+  0% {
+    background: linear-gradient(0deg, #ec7434, #d579dd);
+  }
+  12% {
+    background: linear-gradient(45deg, #ec7434, #d579dd);
+  }
+  24% {
+    background: linear-gradient(95deg, #ec7434, #d579dd);
+  }
+  36% {
+    background: linear-gradient(145deg, #ec7434, #d579dd);
+  }
+  48% {
+    background: linear-gradient(195deg, #ec7434, #d579dd);
+  }
+  60% {
+    background: linear-gradient(245deg, #ec7434, #d579dd);
+  }
+  72% {
+    background: linear-gradient(295deg, #ec7434, #d579dd);
+  }
+  100% {
+    background: linear-gradient(360deg, #ec7434, #d579dd);
+  }
+}
+
+@keyframes button-warning {
+  0% {
+    background: linear-gradient(0deg, #f0cb52, #d579dd);
+  }
+  12% {
+    background: linear-gradient(45deg, #f0cb52, #d579dd);
+  }
+  24% {
+    background: linear-gradient(90deg, #f0cb52, #d579dd);
+  }
+  36% {
+    background: linear-gradient(145deg, #f0cb52, #d579dd);
+  }
+  48% {
+    background: linear-gradient(195deg, #f0cb52, #d579dd);
+  }
+  60% {
+    background: linear-gradient(245deg, #f0cb52, #d579dd);
+  }
+  72% {
+    background: linear-gradient(295deg, #f0cb52, #d579dd);
+  }
+  100% {
+    background: linear-gradient(360deg, #f0cb52, #d579dd);
+  }
+}

@@ -1,0 +1,108 @@
+.cart-container {
+  //   border: 1px solid white;
+  height: 65vh;
+  margin-top: 10%;
+  // background: #fff;
+
+  .carts {
+    height: 90%;
+    border: 1px solid white;
+    display: flex;
+
+    .product-list {
+      width: 70%;
+      margin: 3%;
+      height: 70%;
+      overflow-y: auto;
+      cursor: pointer;
+
+      table {
+        width: 100%;
+        border: none;
+        border-collapse: collapse;
+
+        thead {
+          position: sticky;
+          position: -webkit-sticky;
+          top: 0;
+          background: rgba($color: #777474, $alpha: 1);
+        }
+
+        tbody {
+        }
+
+        tr {
+          height: 5em;
+          border-top: 1px solid rgb(150, 150, 150);
+          text-align: center;
+          align-items: center;
+          border-radius: 6px;
+          background: rgb(64 62 62);
+          i {
+            cursor: pointer;
+            transition: 0.3s;
+          }
+
+          i::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+          }
+
+          i:hover {
+            background: rgb(91, 91, 91);
+            box-shadow: 0 5px 35px rgba(209, 208, 208, 0.6);
+            transform: scale(1.5);
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .product-list::-webkit-scrollbar {
+      width: 8px;
+      background: rgb(255, 255, 255, 0.3);
+      border-radius: 5px;
+      visibility: hidden;
+    }
+
+    .product-list::-webkit-thumb {
+      width: 10px;
+      background: rgba(146, 26, 26, 0.3);
+      border-radius: 5px;
+      visibility: hidden;
+    }
+
+    .product-list:hover::-webkit-scrollbar {
+      visibility: visible;
+    }
+
+    .checkout {
+      width: 25%;
+      margin: 3%;
+      height: 70%;
+      cursor: pointer;
+      border: 1px solid white;
+      padding: 1%;
+
+      ul {
+        list-style: none;
+        li {
+          margin-top: 20px;
+          margin-left: 20px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          p{
+            width: 70%;
+
+            span {
+              float: right;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}

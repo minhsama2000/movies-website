@@ -1,0 +1,97 @@
+.list-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+  .order {
+    color: #e8ebee;
+    transform: rotatey(20deg);
+    height: 43vh;
+    width: 50%;
+    border-radius: 45px;
+    transition: 0.3s;
+    background: linear-gradient(90deg, #707475, #4f5c69);
+    text-align: center;
+    animation: order 1s none;
+    box-shadow: 1px 1px 10px 1px #888;
+    transform: rotate(20px);
+    border: 1px solid rgba($color: #a7a7a7, $alpha: 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: grid;
+
+
+    .order-detail {
+      padding: 8px;
+      h3 {
+        top: 30px;
+        left: 30px;
+        font-style: italic;
+        font-size: 2rem;
+      }
+      .describe {
+        top: 100px;
+        left: 30px;
+        text-align: start;
+        font-size: 1rem;
+      }
+      .price {
+        font-size: 1.3em;
+        color: white;
+        font-weight: 600;
+      }
+      .benefit {
+        top: 240px;
+        left: 30px;
+
+        ul {
+          list-style: none;
+          text-align: start;
+        }
+      }
+    }
+
+    button {
+      margin-top: 69%;
+      font-style: italic;
+      width: 10rem;
+      background: linear-gradient(rgb(200, 183, 183));
+    }
+  }
+
+  .order:hover {
+    animation: order 1s infinite;
+    box-shadow: 5px 5px 10px 1px #888;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes order {
+  0% {
+    background: linear-gradient(0deg, #707475, #4f5c69);
+  }
+  12% {
+    background: linear-gradient(45deg, #707475, #4f5c69);
+  }
+  24% {
+    background: linear-gradient(95deg, #707475, #4f5c69);
+  }
+  36% {
+    background: linear-gradient(145deg, #707475, #4f5c69);
+  }
+  48% {
+    background: linear-gradient(195deg, #707475, #4f5c69);
+  }
+  60% {
+    background: linear-gradient(245deg, #707475, #4f5c69);
+  }
+  72% {
+    background: linear-gradient(295deg, #707475, #4f5c69);
+  }
+  100% {
+    background: linear-gradient(360deg, #707475, #4f5c69);
+  }
+}

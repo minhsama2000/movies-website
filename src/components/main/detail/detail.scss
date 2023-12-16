@@ -1,0 +1,82 @@
+.detail {
+  // position: relative;
+  // border: 1px solid #ffffff;
+  height: auto;
+  margin: 40px 0px;
+  // top: 50px;
+
+  .movie_detail {
+    // position: absolute;
+    top: 20px;
+    left: 50px;
+
+    p {
+      margin-top: 35px;
+      width: 70%;
+    }
+
+    .details {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      h6 {
+        color: rgb(255, 255, 255, 0.8);
+        font-size: 10px;
+        margin-right: 10px;
+      }
+      h5 {
+        color: rgb(142, 230, 48);
+        font-size: 10px;
+        margin-right: 10px;
+      }
+      h4 {
+        color: #fff;
+        font-size: 10px;
+        margin-right: 10px;
+      }
+      h3 {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        span {
+          background: yellow;
+          color: #000;
+          padding: 0px 3px;
+          margin: 0px 5px 0px 5px;
+          font-weight: 500;
+          font-size: 10px;
+        }
+
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .actors {
+    ul {
+      list-style: none;
+      display: flex;
+      margin-top: 40px;
+
+      li {
+        margin: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        img {
+          border-radius: 50px;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      li:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}

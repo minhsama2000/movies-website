@@ -1,0 +1,3 @@
+export const MOVIES_SET = 'MOVIES_SET'
+export const MOVIES_UNSET = 'MOVIES_UNSET'
+export const SET_DETAIL_STATE = 'SET_DETAIL_STATE'
