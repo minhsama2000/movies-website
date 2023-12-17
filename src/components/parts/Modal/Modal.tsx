@@ -1,6 +1,6 @@
 import { CSSProperties, ReactNode } from "react";
 import "./modal.scss";
-import Button from "../Button/Button";
+import Button from "../Button/AButton";
 
 export default function Modal({
   title,

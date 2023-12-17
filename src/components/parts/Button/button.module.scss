@@ -1,6 +1,7 @@
 $linear-gradient-primary: linear-gradient(90deg, #00bdff, #0079ff);
 $linear-gradient-danger: linear-gradient(90deg, #ec7434, #d579dd);
 $linear-gradient-warning: linear-gradient(90deg, #f0cb52, #d579dd);
+$linear-gradient-success: linear-gradient(90deg, #4ac93c, #96bb9a);
 
 .button {
   border: none;
@@ -44,6 +45,16 @@ $linear-gradient-warning: linear-gradient(90deg, #f0cb52, #d579dd);
 .button-warning:hover {
   animation: button-warning 1s linear infinite;
   opacity: 1;
+}
+
+.button-success {
+  background: $linear-gradient-success;
+  animation: button-sucess 1s linear none;
+}
+
+.button-success:hover {
+  background: $linear-gradient-success;
+  animation: button-success 1s linear infinite;
 }
 
 @keyframes button-primary {
@@ -124,5 +135,32 @@ $linear-gradient-warning: linear-gradient(90deg, #f0cb52, #d579dd);
   }
   100% {
     background: linear-gradient(360deg, #f0cb52, #d579dd);
+  }
+}
+
+@keyframes button-success {
+  0% {
+    background: linear-gradient(0deg, #4ac93c, #96bb9a);
+  }
+  12% {
+    background: linear-gradient(45deg, #4ac93c, #96bb9a);
+  }
+  24% {
+    background: linear-gradient(90deg, #4ac93c, #96bb9a);
+  }
+  36% {
+    background: linear-gradient(145deg, #4ac93c, #96bb9a);
+  }
+  48% {
+    background: linear-gradient(195deg, #4ac93c, #96bb9a);
+  }
+  60% {
+    background: linear-gradient(245deg, #4ac93c, #96bb9a);
+  }
+  72% {
+    background: linear-gradient(295deg, #4ac93c, #96bb9a);
+  }
+  100% {
+    background: linear-gradient(360deg, #4ac93c, #96bb9a);
   }
 }

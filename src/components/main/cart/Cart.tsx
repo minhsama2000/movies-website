@@ -6,7 +6,7 @@ import {
 } from "../../../store/movie/state";
 import { useSelector } from "react-redux";
 import "./cart.scss";
-import AInput from "../../parts/AInput/AInput";
+import AButton from "../../parts/Button/AButton";
 
 const listCart = [
   {
@@ -64,6 +64,8 @@ export default function Cart() {
 
   const deleteCart = () => {};
 
+  const checkout = () => {};
+
   return (
     <>
       <div className="cart-container">
@@ -101,7 +103,7 @@ export default function Cart() {
               </tbody>
             </table>
           </div>
-          <div className="checkout">
+          <form className="checkout">
             <ul>
               <li>
                 <p>
@@ -110,10 +112,42 @@ export default function Cart() {
               </li>
               <li>
                 <label htmlFor="fullname">Full name</label>
-                {/* <AInput  props={new } /> */}
+                <input id="fullname" type="text" />
+              </li>
+              <li>
+                <label htmlFor="phone_number">Phone number</label>
+                <input id="phone_number" type="text" />
+              </li>
+              <li>
+                <label htmlFor="email">Email</label>
+                <input id="email" type="email"/>
+              </li>
+              <li>
+                <label htmlFor="accept_card">Accept card</label>
+                <div className="icon-container">
+                  <i className="fab fa-cc-visa" style={{ color: "navy" }}></i>
+                  <i className="fab fa-cc-amex" style={{ color: "blue" }}></i>
+                  <i
+                    className="fab fa-cc-mastercard"
+                    style={{ color: "red" }}
+                  ></i>
+                  <i
+                    className="fab fa-cc-discover"
+                    style={{ color: "orange" }}
+                  ></i>
+                </div>
+              </li>
+              <li>
+                <AButton
+                  className="button-success"
+                  onHandleButton={checkout}
+                  styleCustom={{}}
+                  title="Checkout"
+                  type="button"
+                />
               </li>
             </ul>
-          </div>
+          </form>
         </div>
       </div>
     </>
